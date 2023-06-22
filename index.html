@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        /* Header/logo Title */
+        .header {
+            padding: 80px;
+            text-align: center;
+            background: url(https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+            color: white;
+
+        }
+
+        /* Increase the font size of the heading */
+        .header h1 {
+            font-size: 40px;
+        }
+
+        /* Style the top navigation bar */
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        /* Right-aligned link */
+        .navbar a.right {
+            float: right;
+        }
+
+        /* Change color on hover */
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Column container */
+        .row {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+            -ms-flex: 30%;
+            /* IE10 */
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        /* Main column */
+        .main {
+            -ms-flex: 70%;
+            /* IE10 */
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        /* Fake image, just for this example */
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: darkgray;
+        }
+
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Waleed Lateef</h1>
+        <p>Python Django Developer.</p>
+    </div>
+
+    <div class="navbar">
+        <a href="https://www.linkedin.com/in/waleed-lateef-305055250/" target="_blank">Linkedin</a>
+        <a href="https://twitter.com/WaleedLateef2?t=c6JlVjOtyXZLvBz-EzHH3w&s=09" target="_blank">Twitter</a>
+        <a href="https://www.waleed.lateef.785@gmail.com" target="_blank">Email</a>
+        <a href="https://github.com/Waleed778" class="right" target="_blank">Github</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>About Me</h2>
+            <p>Hi Dear Well wishers of mine ,I am Waleed lateef from Gawadar, Balochistan. I am graduated july 26, 2022
+                from the Department of
+                Information Technolog, Bahauddin Zakriya University Multan. I am a python/web developer, I have hands-on
+                experience
+                working with Django Framework and I am proficientin flask. Currently, I am doing a 12-weeks bootcamp
+                training for Python Django developer to enhance my technical and interpersonal skills to accelerate my
+                career</p>
+            <h3>Some Project in University life</h3>
+            <ul>
+                <li>Qandeel Kitab jah</li>
+                <li>BMI Calculator</li>
+                <li>To Do List App</li>
+                <li>Cipher text converter</li>
+            </ul>
+            <h5>Boss himself:</h5>
+            <div>
+                <img src="waleed.png" class="fakeimg" style="height:400px;" alt="">
+            </div>
+
+            <h3>Information Technology</h3>
+            <p>Today world is the world of information and telecommunication. Everyday new technology and
+                inventions are being made in the area of information, processing, and travelling. There is hardly
+                any area which had not been affected by this. Due to all this, the word distance sounds ironic in
+                the present-day context.</p>
+            <div>
+                <img src="https://thumbs.dreamstime.com/b/information-technology-related-word-cloud-handwritten-bu-concept-businessman-56028529.jpg"
+                    class="fakeimg" style="height:300px;" alt="">
+            </div><br>
+            <div>
+                <img src="https://thumbs.dreamstime.com/z/internet-information-technology-businessman-hand-showing-concept-75784736.jpg"
+                    class="fakeimg" style="height:300px; alt="">
+            </div><br>
+            <div>
+                <img src="
+                    https://thumbs.dreamstime.com/z/internet-information-technolgy-cloud-server-computing-process-62826699.jpg"
+                    class=" fakeimg" style="height:300px;" alt="">
+            </div>
+        </div>
+        <div class="main">
+            <h2>Django World</h2>
+            <h4>World moving toward Django framwork Because Django is a high-level web framework for building web
+                applications
+                using the Python programming language. It follows the Model-View-Controller (MVC) architectural pattern
+                and emphasizes
+                the Don't Repeat Yourself (DRY) principle, promoting efficient and clean code development.</h4>
+            <h3>Here are some key aspects and features of Django:</h3>
+            <p>1.Object-Relational Mapping (ORM): Django provides a powerful ORM that allows developers to interact
+                with the database using Python code, without writing SQL queries directly. It supports various database
+                backends such as PostgreSQL, MySQL, SQLite, and Oracle.</p>
+            <p>2.URL routing: Django uses a flexible URL routing system that maps URLs to views, enabling you to define
+                the structure and behavior of your application's URLs.</p>
+            <p>3.Template Engine: Django includes a template engine that allows you to separate the presentation logic
+                from the business logic. Templates are HTML files with embedded Django template language (DTL) syntax,
+                which enables dynamic content rendering.</p>
+            <p>4.Authentication and Authorization: Django provides built-in user authentication and authorization
+                mechanisms.
+                It includes features like user registration, login, password management, and permission-based access
+                control.</p>
+
+            </p>
+            <div>
+                <img src="https://i.pinimg.com/564x/0c/ec/a4/0ceca4a3c24d86edf6c1796f1f186f14.jpg" class="fakeimg"
+                    style="height:500px;" alt="">
+            </div>
+            <p>Conclusion for Django Framework?</p>
+            <p>Django is an incredibly versatile framework that can be used to build all kinds of web applications,
+                from simple blogs and portfolios to complex e-commerce sites and social networks.
+            </p>
+            <p>Furthermore, Django's extensibility allows developers to leverage a wide range of third-party packages
+                and extensions, expanding the framework's capabilities and enabling rapid application development.
+                Overall, Django's robustness, scalability, and extensive documentation make it a popular choice for
+                developers
+                seeking a framework that streamlines web development while maintaining high code quality and security
+                standards.
+            </p>
+
+            <br>
+            <h2>Be Prepare for IT Revelution</h2>
+            <h5>OpenAI, june,22 2023</h5>
+            <P>We are prepare for the upcoming change As a Nation?</P>
+            <p>“It is not the strongest or the most intelligent who will survive but those who can best manage change “;
+                said Leon c. Megginson.
+            </p>
+            <p>In order to grow, nations must prepare for change. Transitions are never easy, which must be planned with
+                a clear road map to move forward. For sound decision making, data is required which is not easily
+                available
+                in the land of the pure. Ground realities keep changing which are not accounted for by the policy makers
+            </p>
+            <div>
+                <img src="https://botnation.ai/site/wp-content/uploads/2023/01/ChatGPT-intelligence-artificielle.jpg.webp"
+                    class="fakeimg" style="height:500px;" alt="">
+            </div>
+            <p>OpenAI</p>
+            <p>The development and advancement of AI technology, including chatbots like ChatGPT, can certainly have an
+                impact
+                on various aspects of society and potentially bring about changes in how we interact with technology.
+                However,
+                the specific nature and direction of future revolutions or developments are uncertain and dependent on
+                numerous
+                factors, including technological advancements, societal needs, and ethical considerations.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer">
+            <p>Author: Waleed Lateef</p>
+            <p><a href="https://www.waleed.lateef.785@gmail.com">Waleed.lateef.785@gmail.com</a></p>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
